@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>[22,27,16,2,18,6] insertion short türüne göre sıralanışı önce 2 ve 22 yer değiştirecek [2,27,16,22,18,6] daha sonra ikinci büyüğü yerine koymak için 27 ve 6 yer değiştirecek [2,6,16,22,18,27] sırya göre üçüncü en büyük 16 sonra ki en büyük için 18 ve 22 yer değiştirmeli [2,6,16,18,22,27] dizimizin son hali bu dur. 
+
+ 
+
+        [2,6,16,18,22,27] bu diziye göre istenilen sayı 18 dir. Big O (n) dir. Aranan sayı dizinin ortasında olduğu için Average case dir. 
+        
+         
+        
+        [7,3,5,8,2,9,4,15,6] öne dizimizi sıralı yapmak içiin 7 ve 2 yer değiştirmeli. [2,3,5,8,7,9,4,15,6] daha sonra 5 ve 4 [2,3,4,8,7,9,5,15,6] daha sonra 8 ve 5 [2,3,4,5,7,9,8,15,6]da sonra 6 ve 7 [2,3,4,5,6,9,8,15,7] daha sonra 9 ve 7 [2,3,4,5,7,7,8,15,9] daha sonra 15 ve 9 [2,3,4,5,7,7,8,9,15] olur. 
+        
+         
+        
+         
+        
+        [16,21,11,8,12,22] Merge short  
+        
+        Bu diziyi ikiye bölersek [16,21,11] [8,12,22] olur bunları da parçalar isek [16,21] [11], [8,12] [22] bunları da hepsi tek kalacak şekilde parçalıybınca [16] [21] [11], [8] [12] [21] daha sonra ayrı iki gurupta küçükler başa gelecek şekilde önce ikili sonra üçlü daha sonrada hepsini birleştireceğiz  
+        
+        11 küçüktür 16’dan [11,16] burada 21, 11 ve 16’dan büyük olduğu için en sona geçer [11,16,21] 
+        
+        8 küçüktür 12’den [8,12] 22, 8 ve 12 ‘den büyük olduğu için en sona geçer [8,12,22] 
+        
+        [11,16,21] [8,12,22] arasına 1. sıradakiler karşılaştırılır başa o yazılı 
+        
+        Burada 8 ve 11 arasından 8 daha küçüktür daha sonra 11 ve 16 arasında 11 küçüktür 16 ve 12 arasından 12 küçüktür, 16 ve 22 arasından 16 küçüktür, 22 ve 21 arasından 21 küçüktür. 
+        
+        Dizinin son hali [8,11,12,16,21,22] dir. 
+        
+        Big O (n) 
+        
+         
+        
+         
+        
+        [7, 5, 1, 8, 3, 6, 0, 9, 4, 2]  binary short tree 
+        
+         
+        
+        Bu dizenin sıralanmış şekli [0,1,2,3,4,5,6,7,8,9] dur binary short tree şekli için rootu 5 seçelim 
+        
+                                                          5 
+        
+                                                    4           6 
+        
+                                                3                     7                            
+        
+                                             2                            8 
+        
+                                         1                                   9 
+        
+                                        0 
+        
+         Şeklindedir. Eğer bu sisteme –2 ekelenecek ise izlenmesi gereken sıra -4 5 ten küçük mü büyük mü? Küçük ise sol tarafa gidilir. Daha sonra 4,3,2,1,0’dan küçük olup olmadığına bakılarak yerleştirilir. 
+        
+        Sisteme 15 eklenecek ise 5 ten büyük mü küçük mü olduğuna bakılır büyük ise sağ tarafa gidilir sırayla 6,7,8,9’dan da büyük ise sistemin sonuna eklenir. </p>
+</body>
+</html>
